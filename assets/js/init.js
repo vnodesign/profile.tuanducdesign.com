@@ -1,0 +1,1 @@
+function handleHeader(e){e>0?document.body.classList.add("has--scrolled"):document.body.classList.remove("has--scrolled")}var offsetY=0,ticking=!1;window.addEventListener("scroll",(function(){offsetY=window.scrollY,ticking||(window.requestAnimationFrame((function(){handleHeader(offsetY),ticking=!1})),ticking=!0)}));
